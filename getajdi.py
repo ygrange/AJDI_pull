@@ -18,7 +18,7 @@ import os, sys, datetime, urllib
 
 APOD_BASE_URL="http://www.astron.nl/dailyimage/"
 APOD_URL=APOD_BASE_URL+"main.php?date="
-APOD_HOME="aspod"
+APOD_HOME="AJDI_pull"
 
 APOD_HOME=os.environ['HOME']+"/"+APOD_HOME
 
