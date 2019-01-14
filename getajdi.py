@@ -64,8 +64,11 @@ def get_img(date):
 	container=list()
 
 	for lin in data:
-		if 'DIV style="font-size:smaller"' in lin:
+		if 'div style="font-size:smaller"' in lin.lower():
 			container.append(lin)
+        if len(container) == 0:
+            sys.stderr.write("ERROR: No image container found")
+            sys.exit(4)
 	if len(container)!=1:
 		sys.stderr.write("Case needs to be implemented")
 		sys.exit(3)
